@@ -7,6 +7,7 @@ def load_library(path)
   new_hash = {}
   library.each do |key, value|
     new_hash[key] = {}
+    
   end
   binding.pry
 end
