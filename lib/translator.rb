@@ -33,7 +33,7 @@ def get_japanese_emoticon(file_path, emoticon)
     end
   if !emoticon_search
     then "Sorry, that emoticon was not found"
-    else library[key][:japanese]
+    else library[emoticon_search][:japanese]
   end
 end
 
