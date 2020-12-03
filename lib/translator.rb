@@ -22,7 +22,7 @@ def get_english_meaning(file_path, emoticon)
   emoticon_search = library.keys.find do |key|
       library[key][:japanese] == emoticon
     end
-  emoticon_search ? emoticon_search[key][:english] : "Sorry, that emoticon was not found"
+  emoticon_search ? emoticon_search : "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon(file_path, emoticon)
@@ -31,6 +31,6 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticon_search = library.keys.find do |key|
       library[key][:english] == emoticon
     end
-  emoticon_search ? emoticon_search : "Sorry, that emoticon was not found"
+  emoticon_search ? emoticon_search[key][:english] : "Sorry, that emoticon was not found"
 end
 
