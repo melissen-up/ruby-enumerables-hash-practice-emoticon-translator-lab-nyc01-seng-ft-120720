@@ -6,10 +6,11 @@ def load_library(file_path)
   
   new_hash = { }
   library.each do |key, value|
-    binding.pry
+    # binding.pry
     new_hash[key] = { }
     new_hash[key][:english] = value[0]
     new_hash[key][:jampanese] = value[1]
+    binding.pry
   end
   library
 end
