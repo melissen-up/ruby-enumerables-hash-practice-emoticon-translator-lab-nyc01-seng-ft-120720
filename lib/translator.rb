@@ -18,7 +18,8 @@ end
 
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
-  library.each do ||
+  library.each do |emoticon|
+    emoticon.each do 
 end
 
 def get_japanese_emoticon
