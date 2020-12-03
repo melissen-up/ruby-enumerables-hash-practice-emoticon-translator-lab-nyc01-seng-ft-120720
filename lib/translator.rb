@@ -21,6 +21,8 @@ def get_english_meaning(file_path, emoticon)
   library.each do |emoji|
     binding.pry
     emoji.each do 
+   end
+ end
 end
 
 def get_japanese_emoticon
