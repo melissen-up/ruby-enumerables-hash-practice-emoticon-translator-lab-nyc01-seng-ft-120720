@@ -3,16 +3,16 @@ require "pry"
 
 def load_library(file_path)
   library = YAML.load_file(file_path)
-  new_hash = {}
+  emoticon_hash = {}
   
   library.each do |key, value|
     # binding.pry
-    new_hash[key] = {}
-    new_hash[key][:english] = value[0]
-    new_hash[key][:japanese] = value[1]
+    emoticon_hash[key] = {}
+    emoticon_hash[key][:english] = value[0]
+    emoticon_hash[key][:japanese] = value[1]
     # binding.pry
   end
-  new_hash
+  emoticon_hash
 end
 
 def get_japanese_emoticon
