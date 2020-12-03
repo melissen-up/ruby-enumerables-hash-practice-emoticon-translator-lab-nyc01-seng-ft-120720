@@ -2,7 +2,9 @@ require "yaml"
 
 def load_library(file)
   library = YAML.load_file(file)
-  library
+  
+  new_hash = {}
+  
 end
 
 def get_japanese_emoticon
